@@ -1,0 +1,13 @@
+      - name: Current Dir
+        run: ls -a
+
+      - name: Go to target
+        run: |
+          cd target
+          ls -a
+
+      - name: Upload Files
+        uses: actions/upload-artifact@v2
+        with:
+          name: Main-Branch-Assets
+          path: target
