@@ -1,5 +1,7 @@
 package studio.tavex.thirdlife.listeners;
 
+import org.bukkit.ChatColor;
+import org.bukkit.Statistic;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -12,9 +14,7 @@ public class DeathListener implements Listener {
     // Listener for Deaths
     @EventHandler
     public void onPlayerDeath(PlayerDeathEvent e) {
-        if (e.getEntity() instanceof Player) {
             Player p = e.getEntity().getPlayer();
             deathColourChanger.colourChangerScript(p);
-        }
     }
 }

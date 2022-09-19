@@ -16,6 +16,7 @@ public class deathColourChanger {
         }
         if (deaths == 2) {
             p.setDisplayName(ChatColor.RED + p.getDisplayName());
+
         }
         if (deaths == 1) {
             p.setDisplayName(ChatColor.YELLOW + p.getDisplayName());
