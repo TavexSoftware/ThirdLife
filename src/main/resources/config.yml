@@ -1,0 +1,5 @@
+# Enables the join and leave messages
+enablejoinleave: false
+# Only required if enablejoinleave = true
+joinmessage: "Hello {player}! Welcome to the server!"
+leavemessage: "{player} has left the server. See you soon!"
