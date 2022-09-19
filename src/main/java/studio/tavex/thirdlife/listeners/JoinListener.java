@@ -17,9 +17,6 @@ public class JoinListener implements Listener {
         if (ThirdLife.getPlugin(ThirdLife.class).getConfig().getBoolean("enablejoinleave")){
 
         }
-        if (p.getStatistic(Statistic.DEATHS) >= 3){
-            p.setGameMode(GameMode.SPECTATOR);
-            p.sendTitle(ChatColor.RED + "You are dead", ChatColor.YELLOW + "GGWP", 10, 60, 10);
-        }
+        
     }
 }
