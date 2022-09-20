@@ -22,15 +22,19 @@ public class DeathListener implements Listener {
             p.sendTitle(ChatColor.RED + "You are dead", ChatColor.YELLOW + "GGWP", 10, 60, 10);
             p.setDisplayName(ChatColor.RED + p.getDisplayName() + " (0)");
         }
-        if (deaths == 2) {
-            p.setDisplayName(ChatColor.RED + p.getDisplayName() + " (1)");
-
-        }
-        if (deaths == 1) {
-            p.setDisplayName(ChatColor.YELLOW + p.getDisplayName() + " (2)");
-        }
-        if (deaths == 0) {
-            p.setDisplayName(ChatColor.GREEN + p.getDisplayName() + " (3)");
+        switch (deaths) {
+            case 0:
+                p.setDisplayName(ChatColor.GREEN + p.getDisplayName + " (3)");
+                break;
+            case 1:
+                p.setDisplayName(ChatColor.YELLOW + p.getDisplayName + " (2)");
+                break;
+            case 2:
+                p.setDisplayName(ChatColor.RED + p.getDisplayName + " (1)");
+                break;
+        
+            default:
+                break;
         }
     }
 }
