@@ -4,7 +4,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import studio.tavex.thirdlife.listeners.DeathListener;
 import studio.tavex.thirdlife.listeners.JoinListener;
 
-public final class ThirdLife extends JavaPlugin {
+public class ThirdLife extends JavaPlugin {
 
     private static ThirdLife plugin;
 

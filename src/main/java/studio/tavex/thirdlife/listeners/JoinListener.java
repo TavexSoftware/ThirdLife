@@ -14,6 +14,7 @@ public class JoinListener implements Listener {
 
     @EventHandler
     public void joinEvent (PlayerJoinEvent e) {
+        System.out.println("Player joined");
         Player p = e.getPlayer();
         if (ThirdLife.getPlugin(ThirdLife.class).getConfig().getBoolean("enablejoinleave")){
 
@@ -27,13 +28,13 @@ public class JoinListener implements Listener {
         
         switch (deaths) {
             case 0:
-                p.setDisplayName(ChatColor.GREEN + p.getDisplayName + " (3)");
+                p.setDisplayName(ChatColor.GREEN + p.getDisplayName() + " (3)");
                 break;
             case 1:
-                p.setDisplayName(ChatColor.YELLOW + p.getDisplayName + " (2)");
+                p.setDisplayName(ChatColor.YELLOW + p.getDisplayName() + " (2)");
                 break;
             case 2:
-                p.setDisplayName(ChatColor.RED + p.getDisplayName + " (1)");
+                p.setDisplayName(ChatColor.RED + p.getDisplayName() + " (1)");
                 break;
         
             default:

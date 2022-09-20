@@ -15,6 +15,7 @@ public class DeathListener implements Listener {
     // Listener for Deaths
     @EventHandler
     public void onPlayerDeath(PlayerDeathEvent e) {
+        System.out.println("Player died");
             Player p = e.getEntity().getPlayer();
         int deaths = p.getStatistic(Statistic.DEATHS);
         if (deaths >= 3){
@@ -24,13 +25,13 @@ public class DeathListener implements Listener {
         }
         switch (deaths) {
             case 0:
-                p.setDisplayName(ChatColor.GREEN + p.getDisplayName + " (3)");
+                p.setDisplayName(ChatColor.GREEN + p.getDisplayName() + " (3)");
                 break;
             case 1:
-                p.setDisplayName(ChatColor.YELLOW + p.getDisplayName + " (2)");
+                p.setDisplayName(ChatColor.YELLOW + p.getDisplayName() + " (2)");
                 break;
             case 2:
-                p.setDisplayName(ChatColor.RED + p.getDisplayName + " (1)");
+                p.setDisplayName(ChatColor.RED + p.getDisplayName() + " (1)");
                 break;
         
             default:

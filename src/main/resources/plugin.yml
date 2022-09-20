@@ -1,6 +1,6 @@
 name: Thirdlife
 version: '${project.version}'
-main: studio.tavex.thirdlife.Thirdlife
+main: studio.tavex.thirdlife.ThirdLife
 api-version: 1.18
 authors: [ Maxhe ]
 description: A plugin inspired by Thirdlife
